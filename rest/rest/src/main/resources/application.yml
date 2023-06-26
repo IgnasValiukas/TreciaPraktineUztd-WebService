@@ -1,0 +1,4 @@
+app:
+  name: REST API Ignas V PI21B
+server:
+  port: 8080
