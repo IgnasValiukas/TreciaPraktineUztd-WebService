@@ -6,6 +6,8 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.List;
+
 @Getter
 @Setter
 @NoArgsConstructor
@@ -26,4 +28,7 @@ public class Lego {
     private double price;
     @Column(name = "age")
     private String age;
+
+    @OneToMany(cascade = CascadeType.ALL)
+    private List<LegoStore> legoStore;
 }

@@ -42,6 +42,7 @@ public class LegoController {
         updateLego.setPieceCount(legoDetails.getPieceCount());
         updateLego.setPrice(legoDetails.getPrice());
         updateLego.setAge(legoDetails.getAge());
+        updateLego.setLegoStore(legoDetails.getLegoStore());
 
         legoRepository.save(updateLego);
 
